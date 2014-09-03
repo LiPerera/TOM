@@ -1,0 +1,29 @@
+﻿@model MvcTOM.Models.Tasks
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+@using (Html.BeginForm("Index", "Tasks", FormMethod.Post)) 
+{
+ <label>TASK ID</label>
+ @Html.TextBoxFor(m => m.TASK_ID);
+<br />  
+ <label>TASK NAME</label>
+ @Html.TextBoxFor(m => m.TASK_NAME);
+<br />
+ <label>DESCRIPTION</label>
+@Html.TextBoxFor(m => m.DESCRIPTION);   
+<br />
+ <label>TASK STATUS</label>   
+ @Html.TextBoxFor(m => m.TASK_STATUS);   
+<br />
+
+ @* Task ID: <input type="text" name="TASK_ID" ID="TASK_ID" /><br />  *@
+ @* Task NAME: <input type="text" name="TASK_NAME" ID="TASK_NAME" /><br />  *@
+ @* Task DESCRIPTION: <input type="text" name="DESCRIPTION" ID="DESCRIPTION"/><br />*@  
+ @* Task STATUS: <input type="text" name="TASK_STATUS" ID="TASK_STATUS"/><br />  *@
+
+ <input type = "submit" value="Click here" /><br />
+ }

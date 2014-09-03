@@ -1,0 +1,15 @@
+﻿@model List<MvcTOM.Models.Tasks>
+
+@{
+    ViewBag.Title = "Show_Tasks";
+}
+
+<h2>Show_Tasks</h2>
+
+@foreach (MvcTOM.Models.Tasks value in Model)
+{
+    <div>@value.TASK_ID</div>
+    <div>@value.TASK_NAME</div>
+    <div>@value.DESCRIPTION</div>
+    <div>@value.TASK_STATUS</div>
+}
