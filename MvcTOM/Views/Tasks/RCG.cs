@@ -7,5 +7,7 @@ namespace MvcTOM.Views.Tasks
 {
     public class RCG
     {
+
+        private RCG 
     }
 }
